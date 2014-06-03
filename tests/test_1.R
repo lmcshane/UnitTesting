@@ -13,7 +13,7 @@
 # throws_error: Does the expression raise an error?
 # takes_less_than: Does the expression take less than a specified number of seconds to run?
 
-test_that("test", {
+test_that("test factorial", {
   expect_that(1 ^ 1, equals(1))
   expect_that(2 ^ 2, equals(4))
   
@@ -22,10 +22,11 @@ test_that("test", {
   
   expect_that(1, is_a('numeric'))
   
-  expect_that(print('Hello World!'), prints_text('Hello New York!'))
+  expect_that(print('Hello World!'), prints_text('Hello World!'))
   
   expect_that(log('a'), throws_error())
   
   expect_that(factorial(16), takes_less_than(1))
+  expect_that(factorial(3), equals(6))
 }
 )
