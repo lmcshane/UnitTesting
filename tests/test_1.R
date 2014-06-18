@@ -22,7 +22,7 @@ test_that("test factorial", {
   
   expect_that(1, is_a('numeric'))
   
-  expect_that(print('Hello World!'), prints_text('Hello World!'))
+  expect_that(print('Hello World!'), prints_text('Is Blue!'))
   
   expect_that(log('a'), throws_error())
   
